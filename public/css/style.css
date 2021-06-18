@@ -184,7 +184,7 @@ nav.navbar.bootsnav .navbar-toggle {
     padding: 10px;
     top: 0;
 }
-nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
+nav.navbar.bootsnav .navbar-toggle i{color: teal}
 /*.navbar-toggle */
 
 
@@ -207,7 +207,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     content: " ";
     top:0;
     left:0;
-    background:rgba(31,44,108,.65);
+    background:rgba(31, 76, 108, 0.65);
     width:100%;
     height:100%;
 }
@@ -235,8 +235,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     line-height: 60px;
     border-radius: 3px;
     text-transform: capitalize;
-    color: #fff;
-    background: teal
+    color: whitesmoke;
+    background: teal;
     border:1px solid teal;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
     -webkit-transition: 0.3s linear; 
@@ -245,7 +245,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
+.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:rgb(255, 119, 0);border: 1px solid teal;}
 /*.header-text-area*/
 
 /*-------------------------------------
@@ -310,7 +310,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .about-list-icon  ul li a {
     padding-right: 22px;
     cursor:pointer;
-    color: #fff;
+    color: teal;
 }
 .about-list-icon ul li a {
     cursor: pointer;
