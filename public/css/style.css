@@ -220,7 +220,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: teal}
     text-transform: uppercase;
     line-height: 1.5;
 }
-.header-text h2 span {color: teal;}
+.header-text h2 span {color: orangered;}
 .header-text p {
     color: #fff;
     font-size: 20px;
@@ -301,7 +301,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: teal}
     left: 0;
     width: 109%;
     height: 90px;
-    background: #1f2c6c;
+    background: orangered;
 }
 /*.ab-list-icon */
 .about-list-icon ul {
@@ -337,10 +337,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: teal}
 
 /* font-family: 'Roboto Condensed', sans-serif; */
 
-.education {
-    background:  #f9fbfd;
-    padding-top:  50px;
-    
+.display-recipe {
+    background: #f9fbfd;
+    padding-top: 50px;
+    display: flex;
+    align-content: center;
 }
 .education-horizontal-timeline {
     padding: 80px 0;
