@@ -62,21 +62,23 @@
 		
 		<!-- top-area Start -->
 		<header class="top-area">
-			<img href="static/images/logo/My-Abuelita-logo.png">
+			<!-- <img href="static/images/logo/My-Abuelita-logo.png"> -->
 			<div class="header-area">
 				<!-- Start Navigation -->
 			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
 
 			        <div class="container">
-
+						
 			            <!-- Start Header Navigation -->
 			            <div class="navbar-header">
+							
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 			                    <i class="fa fa-bars"></i>
 			                </button>
-			                <a class="navbar-brand" href="index.ejs">My Abuelita
+							
+			                <a class="navbar-brand" href="index.ejs"> <img id="home-icon" src="static/images/logo/My-Abuelita-logo.png"> My Abuelita
 							</a>
-							<!-- <img class="logo-beg" src="static/images/logo/My-Abuelita-logo.png" > -->
+								<!-- <a><img id="home-icon" src="static/images/logo/My-Abuelita-logo.png"></a> -->
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
 
@@ -133,28 +135,18 @@
 							<div class="single-about-txt">
 								<h3>
 									This app will help you gathering nice and delicious recipes.
-								</h3>
-								<p>
-									Contact Us!
-								</p>
+								</h3> <br>
+								
 								<div class="row">
 									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>phone</h3>
-											<p>02-123-6547</p>
-										</div>
+										
+									<div class="button-container">
+										<form class="formulario" action="">
+											<input type="text" id="searchInput" placeholder="Name of the recipe">
+											<input type="button" class="boton" id="btn-searchRecipe" value="Search recipe">
+										</form>
 									</div>
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>email</h3>
-											<p>myabuelitas@info.com</p>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>website</h3>
-											<p>www.myabuelitas.com</p>
-										</div>
+									
 									</div>
 								</div>
 							</div>

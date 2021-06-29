@@ -54,6 +54,14 @@ body{
 	overflow-x:hidden;
 }
 
+#home-icon{
+    background-color: white;
+    color: teal;
+    width: 30px;
+    height: 30px;
+    align-content: center;
+}
+
 a,a:hover,a:active,a:focus {
 	display:inline-block;
 	text-decoration:none;

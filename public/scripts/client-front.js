@@ -1,13 +1,34 @@
 // FRONT END FILE TO INTERACT WITH THE DOM
 
-let addRecipeBoton = document.getElementById('btn-agregar');
-let addRecipeBoton2 = document.getElementById("boton2");
+const searchRecipeBtn = document.getElementById('btn-searchRecipe');
 
-addRecipeBoton.addEventListener('click',(event) => {
-    alert('Friking working') 
+
+
+// FETCH THE RECIPES FROM THE APP
+
+const searchRecipes = (recipe) => {
+    recipe-display.innerHTML = ""
+
+fetch("https://mycookbook-io1.p.rapidapi.com/recipes/rapidapi", {
+	"method": "POST",
+	"headers": {
+		"content-type": "text/plain",
+		"x-rapidapi-host": "mycookbook-io1.p.rapidapi.com"
+	},
+	"body": "https://www.jamieoliver.com/recipes/vegetables-recipes/superfood-salad/"
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
 });
-    
-addRecipeBoton2.addEventListener('click',(event) => {
-    console.log('Friking working2')
-});
-    
+
+//ENTRE POINTS
+
+searchRecipeBtn.addEventListener('click',(event) => {
+    let input = document.getElementById("searchInput")
+    console.log(input.value)
+    searchRecipes(input.value)
+})
+
