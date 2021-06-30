@@ -8,8 +8,7 @@ const sqlite3 = require('sqlite3').verbose();
 const addRecipetoDB = (recipe) => {
     console.log("Check the recipes received", recipe)
 
-    let db = sqlite3.Database("db/internationalrecipes.db");
-    {
+    let db = sqlite3.Database("db/internationalrecipes.db"); {
         db.run(`ÌNSERT INTO internationalrecipes (Title, Country, City, Ingredients, Process) VALUES (?,?,?,?,?)`,[recipe.title, recipe.country, recipe.city, recipe.list, recipe.process], function (err) {
 
             if (err) {
@@ -21,9 +20,10 @@ const addRecipetoDB = (recipe) => {
         });
         db.close();
 }
+};
 
 
 
 // EXPORTS
 
-exports.addRecipetoDB = addRecipetoDB
+// exports.addRecipetoDB = addRecipetoDB
