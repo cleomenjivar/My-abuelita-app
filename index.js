@@ -18,7 +18,9 @@ app.get('/',(req, res) => {
 
 // Create here your api setup
 
-
+app.get("/",(req,res) => {
+  res.render(".display-recipe");
+})
 
 
 app.listen(4000, () => console.log("Server Up and running"));
