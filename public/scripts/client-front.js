@@ -9,8 +9,8 @@ const searchRecipes = (recipe) => {
 	.then(response => response.json())
 	.then((data) => {
 		console.log(data.data);
-		document.querySelector("#display-recipe")
-		.insertAdjacentHTML("afterbegin", html)
+		document.querySelector(recipe)
+		.insertAdjacentHTML("afterbegin", "#display-recipe")
 	})
 
 	.catch(err => {
