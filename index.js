@@ -18,10 +18,10 @@ app.get('/',(req, res) => {
 
 // Create here your api setup
 
-app.get("/",(req,res) => {
+app.get("/",(req, res) => {
   res.render(".display-recipe");
 })
 
 
-app.listen(4000, () => console.log("Server Up and running"));
+app.listen(process.env.PORT || 4000, () => console.log("Server Up and running"));
 
