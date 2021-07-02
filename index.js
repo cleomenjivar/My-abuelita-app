@@ -19,7 +19,7 @@ app.get('/',(req, res) => {
 // Create here your api setup
 
 app.get("/",(req, res) => {
-  res.render(".display-recipe");
+  res.render("#display-recipe");
 })
 
 

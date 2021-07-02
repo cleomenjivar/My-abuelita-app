@@ -8,7 +8,9 @@ const searchRecipes = (recipe) => {
 	fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=4c110f3d05744462b7cc71ca2f2d4735&query=${recipe}`)
 	.then(response => response.json())
 	.then((data) => {
-		console.log(data)
+		console.log(data.data);
+		document.querySelector("#display-recipe")
+		.insertAdjacentHTML("afterbegin", html)
 	})
 
 	.catch(err => {
